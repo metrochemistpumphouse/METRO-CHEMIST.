@@ -1,95 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metro Chemist - Online Pharmacy & Medical Store</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Metro Chemist - Online Pharmacy</title>
+    <style>
+        /* Global & Layout Design */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f7f6; color: #333; padding: 40px 20px; }
+        .wrapper { max-width: 700px; margin: 0 auto; background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); border-top: 5px solid #00a896; }
+        
+        /* Heading Styles */
+        h1 { color: #028090; font-size: 28px; margin-bottom: 10px; text-align: center; }
+        .tagline { text-align: center; color: #666; margin-bottom: 30px; font-size: 15px; }
+        
+        /* Form Field Design */
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: 600; margin-bottom: 8px; color: #444; }
+        input[type="text"], textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 6px; font-size: 15px; background: #fafafa; }
+        textarea { resize: vertical; }
+        
+        /* WhatsApp Button Custom Design */
+        .btn-whatsapp { display: flex; align-items: center; justify-content: center; gap: 10px; background-color: #25d366; color: white; padding: 14px; border: none; border-radius: 6px; font-size: 16px; font-weight: bold; width: 100%; cursor: pointer; text-decoration: none; text-align: center; transition: 0.3s; }
+        .btn-whatsapp:hover { background-color: #128c7e; }
+
+        /* Store details block */
+        .store-details { background: #e0f2f1; padding: 20px; border-radius: 8px; margin-top: 30px; font-size: 14px; line-height: 1.6; border-left: 4px solid #028090; }
+        .store-details strong { color: #028090; }
+    </style>
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="container header-flex">
-            <div class="logo">
-                <h1><span>Metro</span> Chemist</h1>
-            </div>
-            <!-- 24 Hours Open Indicator -->
-            <div class="green-board-indicator">
-                🟢 24 Ghanta Open Medical
-            </div>
+    <div class="wrapper">
+        <h1>✙ Metro Chemist</h1>
+        <p class="tagline">24 Hours Open Medical Store - Andheri (East)</p>
+        
+        <!-- Form Section -->
+        <div class="form-group">
+            <label for="name">Your Name / आपका नाम:</label>
+            <input type="text" id="name" placeholder="Enter your full name">
         </div>
-    </header>
-
-    <!-- Hero Banner Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>Metro Chemist</h2>
-            <p>100% Asal Aushadhi Aur Behtar Gunvatta | 24/7 Service</p>
-            <a href="#prescription" class="btn">Order Now Via WhatsApp</a>
+        
+        <div class="form-group">
+            <label for="address">Complete Delivery Address & Phone / पूरा पता और मोबाइल नंबर:</label>
+            <textarea id="address" rows="4" placeholder="Shop No, Building Name, Street, Pincode and Mobile number..."></textarea>
         </div>
-    </section>
+        
+        <!-- Interactive WhatsApp Button -->
+        <a href="#" id="waLink" target="_blank" class="btn-whatsapp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397 0 11.973 0c3.184.001 6.177 1.242 8.426 3.496 2.249 2.254 3.487 5.249 3.486 8.434-.004 6.623-5.34 11.97-11.916 11.97-1.984-.001-3.929-.496-5.654-1.443L0 24zm6.236-4.143c1.62.962 3.208 1.464 4.88 1.465 5.518 0 10.011-4.47 10.015-9.967.002-2.663-1.033-5.166-2.914-7.05C16.334 2.42 13.84 1.382 11.98 1.382c-5.522 0-10.016 4.47-10.02 9.968-.002 1.79.482 3.535 1.4 5.088l-.99 3.615 3.723-.974zm11.365-6.843c-.27-.135-1.597-.788-1.846-.878-.249-.09-.431-.135-.612.135-.181.27-.7.878-.857 1.058-.158.18-.317.202-.587.067-.27-.135-1.14-.42-2.172-1.34-1.03-.918-1.554-1.666-1.757-2.004-.202-.337-.022-.519.148-.687.152-.152.337-.393.506-.59.169-.197.225-.337.338-.562.112-.225.056-.421-.028-.59-.084-.168-.7-1.687-.96-2.315-.252-.61-.51-.527-.7-.537-.18-.008-.387-.01-.594-.01s-.545.078-.83.393c-.286.315-1.09.1.09-1.09 2.663 0 2.225 1.041 2.614 2.211.387 1.171.745 2.029 1.146 2.53.402.502.802.753 1.258.979.456.225.868.213 1.192.165.324-.047 1.596-.653 1.821-1.282.225-.63.225-1.171.157-1.282-.067-.113-.248-.18-.518-.315z"/></svg>
+            Send Order & Prescription on WhatsApp
+        </a>
 
-    <!-- Main Description Section -->
-    <section id="about-store" class="about-section">
-        <div class="container text-center-box">
-            <h2>Welcome to Metro Chemist</h2>
-            <p>
-                Humare paas sabhi prakar ki Medicines, OTC products, Ayurvedic jeri-bootiyan aur Baby care items uplabdh hain. Kisi bhi dawai ya product ko order karne ke liye niche diye gaye form ka upyog karein aur apna prescription ya product list directly WhatsApp par bhejein.
-            </p>
+        <!-- Accurate Store Details -->
+        <div class="store-details">
+            <strong>Store Location Details:</strong><br>
+            Shop No. 7, Dreamx Hights, CTS No. 1, Rajmata Jijabai Road, Mogra, Andheri (East), Mumbai - 400093<br>
+            <strong>Call/WhatsApp:</strong> +91 7400117557
         </div>
-    </section>
+    </div>
 
-    <!-- Order & Prescription Submission Form -->
-    <section id="prescription" class="prescription-section">
-        <div class="container">
-            <div class="form-wrapper">
-                <h2>Place Your Order</h2>
-                <p>Apna Naam, Address aur Mobile number likh kar directly request bhejein, hum aapse sampark karenge.</p>
-                <form id="prescriptionForm">
-                    <div class="form-group">
-                        <label for="p-name">Your Name</label>
-                        <input type="text" id="p-name" placeholder="Enter your full name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="p-phone">Your WhatsApp Number</label>
-                        <input type="tel" id="p-phone" placeholder="Enter your WhatsApp number" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="p-address">Complete Delivery Address</label>
-                        <textarea id="p-address" rows="3" required>Shop No. 7 Ground Floor, Dreamx Heights, CTS No. 1, Rajmata Jijabai Road, Mogra, Andheri East, Mumbai</textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="p-pincode">Pincode</label>
-                        <input type="text" id="p-pincode" value="400093" required>
-                    </div>
-                    <button type="submit" class="submit-btn text-wa-btn">💬 Send Order Request via WhatsApp</button>
-                </form>
-            </div>
-        </div>
-    </section>
+    <!-- Script to send real details dynamically to WhatsApp -->
+    <script>
+        const nameInput = document.getElementById('name');
+        const addrInput = document.getElementById('address');
+        const waLink = document.getElementById('waLink');
 
-    <!-- Store Contact Details Footer Card -->
-    <section id="contact-info" class="contact-info-section">
-        <div class="container">
-            <div class="info-card">
-                <h3>Our Store Location Details</h3>
-                <p><strong>📍 Shop Address:</strong> Shop No. 7 Ground Floor, Dreamx Heights, CTS No. 1, Rajmata Jijabai Road, Mogra, Andheri East, Mumbai</p>
-                <p><strong>📮 Pincode:</strong> 400093</p>
-                <p><strong>📞 Call Support:</strong> +91 7400117557</p>
-                <p><strong>💬 WhatsApp Support:</strong> +91 7400117557</p>
-                <div class="map-action">
-                    <a href="https://goo.gl" target="_blank" class="map-btn">🗺️ View on Google Maps</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        function updateWhatsAppLink() {
+            const name = encodeURIComponent(nameInput.value || 'Not Provided');
+            const address = encodeURIComponent(addrInput.value || 'Not Provided');
+            waLink.href = `https://wa.me{name}%0AAddress/Phone:%20${address}%0A%0AI%20will%20send%20my%20prescription%20photo%20next.`;
+        }
 
-    <!-- Footer Copyright -->
-    <footer>
-        <p>&copy; 2026 Metro Chemist. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+        nameInput.addEventListener('input', updateWhatsAppLink);
+        addrInput.addEventListener('input', updateWhatsAppLink);
+        updateWhatsAppLink(); // Init
+    </script>
 </body>
 </html>
