@@ -1,4 +1,4 @@
-// Target international formatted WhatsApp API route
+// Target international formatted business communication route
 const WHATSAPP_NUMBER = "917400117557"; 
 
 const prescriptionForm = document.getElementById('prescriptionForm');
@@ -6,7 +6,7 @@ const prescriptionForm = document.getElementById('prescriptionForm');
 prescriptionForm.addEventListener('submit', (e) => {
     e.preventDefault();
     
-    // Inputs Data Extraction
+    // Inputs Extraction
     const pName = document.getElementById('p-name').value.trim();
     const pPhone = document.getElementById('p-phone').value.trim();
     const pAddress = document.getElementById('p-address').value.trim();
@@ -18,7 +18,7 @@ prescriptionForm.addEventListener('submit', (e) => {
     msg += `*Contact Number:* ${pPhone}\n`;
     msg += `*Delivery Address:* ${pAddress}\n`;
     msg += `*Pincode:* ${pPincode}\n\n`;
-    msg += `Hello, I would like to place an order. I am sharing my medicine list / doctor's prescription file here in this chat.`;
+    msg += `Hello, I would like to place an order. I am opening this window to share my medicine list / doctor's prescription file here directly.`;
 
     // URI Encoding and window execution trigger
     const encodedText = encodeURIComponent(msg);
