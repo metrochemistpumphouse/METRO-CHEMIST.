@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Chemist - 24/7 Pharmacy in Mumbai</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .pulse-live {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .5; }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Top Bar -->
+    <div class="bg-blue-900 text-white text-xs md:text-sm py-2 px-4 flex flex-wrap justify-between items-center shadow-md">
+        <div class="flex items-center space-x-4">
+            <span class="flex items-center"><i class="fa-solid fa-clock text-green-400 mr-2"></i> Open 24 Hours</span>
+            <span class="hidden md:inline">|</span>
+            <span class="flex items-center"><i class="fa-solid fa-truck text-yellow-400 mr-2"></i> Free Delivery (9 AM - 11 PM)</span>
+        </div>
+        <div class="flex items-center space-x-4 mt-1 sm:mt-0">
+            <a href="tel:+917400117557" class="hover:text-green-400 transition flex items-center"><i class="fa-solid fa-phone mr-1"></i> Call: +91 7400117557</a>
+        </div>
+    </div>
+
+    <!-- Header / Navbar -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <div class="bg-blue-600 text-white p-2.5 rounded-xl shadow-md shadow-blue-200">
+                    <i class="fa-solid fa-file-waveform text-2xl"></i>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-black text-blue-900 tracking-tight">METRO CHEMIST</h1>
+                    <p class="text-xs text-green-600 font-bold uppercase tracking-wider flex items-center">
+                        <span class="w-2 h-2 rounded-full bg-green-500 inline-block mr-1.5 pulse-live"></span>Your 24/7 Healthcare Partner
+                    </p>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-6 font-medium text-gray-600">
+                <a href="#home" class="hover:text-blue-600 transition">Home</a>
+                <a href="#services" class="hover:text-blue-600 transition">Services</a>
+                <a href="#order" class="hover:text-blue-600 transition">Upload Prescription</a>
+                <a href="#contact" class="hover:text-blue-600 transition">Find Us</a>
+            </div>
+            <div>
+                <a href="https://wa.me/917400117557?text=Hello%20Metro%20Chemist,%20I%20want%20to%20order%20medicines." target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold px-5 py-2.5 rounded-full shadow-lg shadow-green-200 transition flex items-center text-sm md:text-base">
+                    <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Order Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-gradient-to-br from-blue-900 via-blue-800 to-indigo-900 text-white py-16 md:py-24 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="bg-blue-700/60 text-blue-200 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full border border-blue-500/30 inline-block mb-4">Genuine Medicines Delivered Fast</span>
+            <h2 class="text-4xl md:text-6xl font-black mb-6 leading-tight">Your Trusted Pharmacy,<br><span class="text-green-400">Open Day & Night</span></h2>
+            <p class="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto mb-10 leading-relaxed">Get authentic prescription medications, OTC products, and healthcare essentials directly to your doorstep in Andheri East.</p>
+            
+            <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#order" class="w-full sm:w-auto bg-white text-blue-950 font-bold px-8 py-4 rounded-xl shadow-xl hover:bg-blue-50 transition text-center">
+                    <i class="fa-solid fa-file-medical mr-2 text-blue-600"></i> Order via Prescription
+                </a>
+                <a href="https://maps.app.goo.gl/ZR4qx3wxrhGaEWKM7" target="_blank" class="w-full sm:w-auto bg-blue-700/50 text-white font-semibold px-8 py-4 rounded-xl border border-blue-500/40 hover:bg-blue-700/70 transition text-center flex items-center justify-center">
+                    <i class="fa-solid fa-map-location-dot mr-2 text-green-400"></i> Get Shop Direction
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Badges -->
+    <section class="max-w-7xl mx-auto px-4 -mt-8 relative z-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Badge 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl flex items-start space-x-4 border-b-4 border-green-500">
+                <div class="bg-green-100 text-green-600 p-3 rounded-xl"><i class="fa-solid fa-business-time text-2xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg">24 Hours Open</h3>
+                    <p class="text-sm text-gray-500 mt-1">We never close. Available for emergencies and regular orders all night.</p>
+                </div>
+            </div>
+            <!-- Badge 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl flex items-start space-x-4 border-b-4 border-blue-600">
+                <div class="bg-blue-100 text-blue-600 p-3 rounded-xl"><i class="fa-solid fa-truck-fast text-2xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg">Free & Fast Delivery</h3>
+                    <p class="text-sm text-gray-500 mt-1">Home delivery services available daily from <strong>9 AM to 11 PM</strong>.</p>
+                </div>
+            </div>
+            <!-- Badge 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-xl flex items-start space-x-4 border-b-4 border-purple-600">
+                <div class="bg-purple-100 text-purple-600 p-3 rounded-xl"><i class="fa-solid fa-hand-holding-medical text-2xl"></i></div>
+                <div>
+                    <h3 class="font-bold text-gray-900 text-lg">100% Genuine Stock</h3>
+                    <p class="text-sm text-gray-500 mt-1">Directly sourced authentic medicines, wellness, and baby care essentials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="max-w-7xl mx-auto px-4 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl font-black text-blue-900 mb-3">Our Dedicated Services</h2>
+            <p class="text-gray-500 max-w-xl mx-auto">Providing complete healthcare retail services with speed, reliability, and precision.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 text-center">
+                <div class="text-blue-600 mb-4"><i class="fa-solid fa-pills text-4xl"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2">Prescription Drugs</h4>
+                <p class="text-sm text-gray-500">Full range of chronic and acute healthcare medications in stock.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 text-center">
+                <div class="text-blue-600 mb-4"><i class="fa-solid fa-baby text-4xl"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2">Baby & Mother Care</h4>
+                <p class="text-sm text-gray-500">Premium baby foods, diapers, healthcare items, and supplements.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 text-center">
+                <div class="text-blue-600 mb-4"><i class="fa-solid fa-heart-pulse text-4xl"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2">OTC & Wellness</h4>
+                <p class="text-sm text-gray-500">Daily health supplements, vitamins, pain relief, and personal hygiene.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-gray-100 text-center">
+                <div class="text-blue-600 mb-4"><i class="fa-solid fa-kit-medical text-4xl"></i></div>
+                <h4 class="font-bold text-gray-900 mb-2">Surgical Essentials</h4>
+                <p class="text-sm text-gray-500">First-aid supplies, bandages, medical devices, and health monitors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Prescription / Quick Order -->
+    <section id="order" class="bg-blue-50 py-16 px-4">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden grid grid-cols-1 md:grid-cols-2">
+            <div class="bg-blue-900 text-white p-8 md:p-12 flex flex-col justify-between">
+                <div>
+                    <span class="text-green-400 font-bold uppercase tracking-wider text-xs">Fastest Way to Order</span>
+                    <h3 class="text-3xl font-black mt-2 mb-4">Quick WhatsApp Order Setup</h3>
+                    <p class="text-blue-100 text-sm leading-relaxed mb-6">Simply click the upload button to take a photo of your valid prescription or send your medicine list directly to our WhatsApp number.</p>
+                </div>
+                <div class="space-y-3 border-t border-blue-800 pt-6">
+                    <div class="flex items-center text-sm"><i class="fa-solid fa-check text-green-400 mr-2"></i> Free Delivery order matching</div>
+                    <div class="flex items-center text-sm"><i class="fa-solid fa-check text-green-400 mr-2"></i> Instant confirmation & pricing</div>
+                </div>
+            </div>
+            <div class="p-8 md:p-12 flex flex-col justify-center items-center text-center">
+                <div class="w-20 h-20 bg-green-50 text-green-500 rounded-full flex items-center justify-center text-4xl mb-6">
+                    <i class="fa-solid fa-cloud-arrow-up"></i>
+                </div>
+                <h4 class="text-xl font-bold text-gray-900 mb-2">Send Prescription via WhatsApp</h4>
+                <p class="text-sm text-gray-500 mb-8 max-w-xs mx-auto">Upload prescription images cleanly for instant pharmacist review.</p>
+                
+                <a href="https://wa.me/917400117557,https://wa.me/918769841782?text=Hello%20Metro%20Chemist,%20I%20am%20sharing%20my%20prescription%20image%20here." target="_blank" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-4 rounded-xl shadow-lg shadow-green-200 transition flex items-center justify-center text-lg">
+                    <i class="fa-brands fa-whatsapp text-2xl mr-2"></i> Upload & Share Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Store Location -->
+    <section id="contact" class="max-w-7xl mx-auto px-4 py-20">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+            <!-- Details Card -->
+            <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-3xl font-black text-blue-900 mb-6">Visit Our Store</h2>
+                    
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-50 text-blue-600 p-3 rounded-xl mt-1"><i class="fa-solid fa-map-pin text-xl"></i></div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 mb-1">Store Address</h5>
+                                <p class="text-gray-600 leading-relaxed text-sm md:text-base">
+                                    Shop No. 7, Ground Floor, Dreamx Hights,<br>
+                                    CTS No. 1, Rajmata Jijabai Road, Mogra,<br>
+                                    Andheri (East), Mumbai - 400093
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-50 text-blue-600 p-3 rounded-xl mt-1"><i class="fa-solid fa-phone-volume text-xl"></i></div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 mb-1">Contact Support</h5>
+                                <p class="text-gray-600 text-sm md:text-base">Mobile No: <a href="tel:+917400117557" class="text-blue-600 font-bold hover:underline">+91-7400117557,+91-8769841782</a></p>
+                                <p class="text-gray-600 text-sm md:text-base">WhatsApp: <a href="https://wa.me/917400117557","https://wa.me/918769841782" target="_blank" class="text-green-600 font-bold hover:underline">+91-7400117557,+91-8769841782</a></p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-blue-50 text-blue-600 p-3 rounded-xl mt-1"><i class="fa-solid fa-business-time text-xl"></i></div>
+                            <div>
+                                <h5 class="font-bold text-gray-900 mb-1">Operation Hours</h5>
+                                <p class="text-gray-600 text-sm md:text-base">Store: <span class="text-green-600 font-bold">24 Hours Open (All Days)</span></p>
+                                <p class="text-gray-600 text-sm md:text-base">Home Delivery: <span class="text-blue-600 font-semibold">9:00 AM to 11:00 PM</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-12 pt-6 border-t border-gray-100 flex flex-col sm:flex-row gap-4">
+                    <a href="https://maps.app.goo.gl/ZR4qx3wxrhGaEWKM7" target="_blank" class="flex-1 bg-blue-600 hover:bg-blue-700 text-white text-center font-bold py-3.5 px-6 rounded-xl transition shadow-md shadow-blue-200">
+                        <i class="fa-solid fa-diamond-turn-right mr-2"></i> Get Directions
+                    </a>
+                    <a href="tel:+917400117557" class="flex-1 bg-gray-150 hover:bg-gray-200 bg-gray-200 text-gray-800 text-center font-bold py-3.5 px-6 rounded-xl transition">
+                        <i class="fa-solid fa-phone mr-2"></i> Call Pharmacist
+                    </a>
+                </div>
+            </div>
+
+            <!-- Map Placeholder / Embed link preview card -->
+            <div class="bg-gradient-to-br from-gray-100 to-gray-200 rounded-3xl p-8 flex flex-col justify-center items-center text-center border border-gray-200/60 shadow-inner relative overflow-hidden min-h-[350px]">
+                <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:20px_20px]"></div>
+                <div class="relative z-10 max-w-sm">
+                    <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-4xl mx-auto mb-6 shadow-md">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                    </div>
+                    <h3 class="text-xl font-black text-gray-900 mb-2">Google Maps Navigation</h3>
+                    <p class="text-sm text-gray-500 mb-6">Click below to open our official location pins inside your native Google Maps application or browser map viewer.</p>
+                    <a href="https://maps.app.goo.gl/ZR4qx3wxrhGaEWKM7" target="_blank" class="inline-block bg-white text-blue-900 border border-gray-300 font-bold px-6 py-3 rounded-xl shadow-md hover:bg-gray-50 transition">
+                        <i class="fa-solid fa-arrow-up-right-from-square text-sm mr-2 text-green-500"></i> Open Live Map Link
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-950 text-blue-200 text-sm py-8 px-4 border-t border-blue-900">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            <div>
+                <p class="font-bold text-white text-base">METRO CHEMIST</p>
+                <p class="text-xs text-blue-300 mt-1">&copy; 2026 All Rights Reserved.</p>
+            </div>
+            <div class="text-center md:text-right text-xs text-blue-300 max-w-md">
+                <p>Shop No. 7, Ground Floor, Dreamx Hights, CTS No. 1, Rajmata Jijabai Road, Mogra, Andheri (East), Mumbai 400093</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
